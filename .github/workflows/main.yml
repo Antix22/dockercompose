@@ -37,7 +37,7 @@ jobs:
                 if [ ! -d "dockercompose" ]; then
                     git clone git@github.com:Antix22/dockercompose.git
                 else
-                    cd /var/www/cwiczenie-dockercompose
+                    cd /var/www/dockercompose
                     git pull origin main
                 fi
                 sudo ansible-playbook -i ansible/inventory.ini ansible/playbook.yml
