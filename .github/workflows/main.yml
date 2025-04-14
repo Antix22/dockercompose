@@ -40,5 +40,4 @@ jobs:
                     cd /var/www/cwiczenie-dockercompose
                     git pull origin main
                 fi
-                cd nodejs-automatyzacja
-                npm install
+                sudo ansible-playbook -i ansible/inventory.ini ansible/playbook.yml
